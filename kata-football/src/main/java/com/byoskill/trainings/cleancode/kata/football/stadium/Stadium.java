@@ -8,7 +8,7 @@ import com.byoskill.trainings.cleancode.kata.football.stadium.logic.SeatGenerato
 public class Stadium {
 	private String city;
 	private String name;
-	private int availableSeats;
+	private int capacity;
 	private LocalDate openingDate;
 
 	private List<Seat> seats;
@@ -24,8 +24,8 @@ public class Stadium {
 		seats = seatGenerator.generate(this);
 	}
 
-	public int getAvailableSeats() {
-		return availableSeats;
+	public int getCapacity() {
+		return capacity;
 	}
 
 	public String getCity() {
@@ -44,8 +44,8 @@ public class Stadium {
 		return seats;
 	}
 
-	public void setAvailableSeats(int availableSeats) {
-		this.availableSeats = availableSeats;
+	public void setCapacity(int availableSeats) {
+		this.capacity = availableSeats;
 	}
 
 	public void setCity(String city) {
@@ -62,7 +62,7 @@ public class Stadium {
 
 	@Override
 	public String toString() {
-		return "Stadium [city=" + city + ", name=" + name + ", availableSeats=" + availableSeats + ", openingDate="
+		return "Stadium [city=" + city + ", name=" + name + ", capacity=" + capacity + ", openingDate="
 				+ openingDate + "]";
 	}
 
